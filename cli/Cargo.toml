@@ -1,0 +1,14 @@
+[package]
+name = "put_rbpf_cli"
+version = "0.2.0"
+description = "CLI to test and analyze eBPF programs"
+authors = ["PUT Maintainers <maintainers@put.com>"]
+repository = "https://github.com/put-labs/rbpf"
+homepage = "https://put.com/"
+keywords = ["BPF", "eBPF", "interpreter", "JIT"]
+edition = "2018"
+
+[dependencies]
+put_rbpf = { path = "../", features = ["debugger"]  }
+put_test_utils = { path = "../test_utils/" }
+clap = "=3.0.0-beta.2"
